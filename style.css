@@ -4,13 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Plus+Jakarta+Sans:wght@300..800&display=swap');
 
 :root {
-    --bg-dark: #090a0b;         /* Preto profundo de fundo (quase total) */
-    --bg-light: #7e1010;        /* Vermelho escuro/sangue para as seções claras */
-    --accent-vibrant: #ff2a2a;   /* Vermelho neon/vivo para links, botões principais e destaques */
-    --accent-yellow: #ff6b00;    /* Laranja de transição para detalhes secundários e hovers */
-    --text-light: #ffffff;      /* Branco puro para leitura limpa */
-    --text-dark: #090a0b;       /* Preto para contrastar sobre fundos claros */
-    --card-bg-dark: #121316;    /* Cinza escuro/grafite para os fundos dos cards de ferramentas e contato */
+    --bg-dark: #0e0f11;
+    --bg-light: #798b10;
+    --accent-vibrant: #d4ff2a;
+    --accent-yellow: #fff000;
+    --text-light: #ffffff;
+    --text-dark: #0e0f11;
+    --card-bg-dark: #000000;
     
     --font-title: 'Fredoka', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
