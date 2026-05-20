@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Jogo - Detalhes do Desenvolvimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-detail">
+
+    <nav class="detail-nav">
+        <a href="index.html" class="btn-back">← Voltar para a Home</a>
+    </nav>
+
+    <main class="container-detail">
+
+        <section class="detail-section">
+            <h2 class="detail-title">SUNRISE GHOST</h2> <p class="detail-description">
+                Um jogo de sobrevivência de hordas singleplayer baseado no gênero action-roguelike. O jogador controla um guerreiro em uma arena fechada e deve enfrentar ondas implacáveis de criaturas com ataques automáticos, focando sua atenção no posicionamento estratégico, desvio de projéteis e na construção de sinergias perfeitas de habilidades para adiar o fim inevitável.
+            </p>
+            <div class="image-wrapper large-image">
+                <img src="assets/Gameplay2.png" alt="Interface Principal do Jogo Arena Survivor">
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <section class="detail-section">
+            <h2 class="detail-title">Mecânicas do Jogo</h2>
+            <p class="detail-description">
+                O vício do gênero está nos sistemas complementares de combate e evolução. Clique nos cards abaixo para expandir os detalhes de gameplay:
+            </p>
+
+            <div class="mechanics-grid">
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Ataque Automático</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        O jogador foca unicamente na movimentação do guerreiro. As armas e magias disparam sozinhas em intervalos fixos de tempo (cooldowns), baseando-se na proximidade dos alvos ou na direção para onde o personagem está olhando.
+                    </p>
+                </details>
+
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Coleta de XP e Level Up</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        Monstros derrotados deixam cair esferas de experiência na arena. Ao acumular XP e subir de nível, o jogo congela e oferece uma escolha aleatória de três ou quatro cartas de upgrades de habilidades para o guerreiro.
+                    </p>
+                </details>
+
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Hordas Procedurais</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        A dificuldade escala com o tempo de partida. O sistema de spawn cria ondas progressivamente maiores, introduzindo criaturas velozes, inimigos com armadura e chefes de elite a cada minuto alcançado pelo jogador.
+                    </p>
+                </details>
+
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Sinergia e Evolução</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        Sistema de builds inspirado em roguelikes. Combinar armas específicas de nível máximo com os itens passivos corretos desbloqueia a "evolução" do ataque, transformando golpes simples em poderes catastróficos que limpam a tela.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <section class="detail-section grid-2-columns">
+            <div class="side-text">
+                <h2 class="detail-title">Minhas Funções</h2>
+                <p class="detail-description" style="margin-bottom: 30px;">
+                    Desenvolvi os sistemas críticos de IA de perseguição de inimigos e a otimização de performance para centenas de objetos simultâneos na tela.
+                </p>
+
+                <details class="role-subtopic">
+                    <summary class="role-summary">
+                        <h4 class="role-sub-title">💻 PROGRAMAÇÃO (Otimização e Algoritmos)</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description role-dropdown-text">
+                        Implementação de um sistema de Object Pooling para lidar com centenas de monstros e projéteis ativos sem causar quedas de framerate. Programação do comportamento de bando dos inimigos usando vetores de direção simples para evitar gargalos na CPU.
+                    </p>
+                </details>
+
+                <details class="role-subtopic">
+                    <summary class="role-summary">
+                        <h4 class="role-sub-title">📐 GAME DESIGN (Matemática e Ritmo)</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description role-dropdown-text">
+                        Balanceamento das tabelas de probabilidade de drops de cartas, calibração do ganho de atributos passivos (velocidade, dano, área de efeito) e estruturação da linha do tempo da partida (pacing) para que o jogador sinta uma evolução épica e satisfatória a cada minuto sobrevivendo.
+                    </p>
+                </details>
+            </div>
+
+            <div class="side-info" style="justify-content: center;">
+                <div class="image-wrapper">
+                    <img src="assets/Cartas.png" alt="Demonstração técnica de código ou blueprint de habilidades">
+                </div>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <section class="detail-section grid-2-columns">
+            <div class="image-wrapper">
+                <img src="assets/Escolha.png" alt="Amostra de gameplay do jogo na arena">
+            </div>
+            <div class="side-info" style="justify-content: center; gap: 20px;">
+                <h3 class="detail-subtitle">Acesse o Projeto</h3>
+                <p class="detail-description">
+                    Jogue a versão estável diretamente através do Itch.io ou confira o escopo e o mapa mental de evolução de habilidades no GDD.
+                </p>
+                <a href="LINK_DO_SEU_ITCH_IO_ARENA" target="_blank" class="btn" style="text-align: center; text-transform: uppercase;">Jogar no Itch.io ↗</a>
+                <a href="LINK_DO_SEU_GDD_ARENA" target="_blank" class="btn" style="text-align: center; text-transform: uppercase; background-color: var(--accent-yellow);">Ler o GDD do Jogo 📄</a>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <section class="detail-section">
+            <h2 class="detail-title">Gameplay em Ação</h2>
+            <p class="detail-description">
+                Assista a um trecho de gameplay em alta densidade, mostrando a sobrevivência nos minutos finais da arena contra chefes de elite.
+            </p>
+            
+            <div class="image-wrapper large-image">
+                <iframe 
+                    width="100%" 
+                    height="500" 
+                    src="https://www.youtube.com/embed/v6U-Le976Qw" 
+                    title="Arena Survivor Gameplay" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen 
+                    style="border-radius: 4px; display: block;">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="detail-footer">
+        <p>&copy; 2026 Jean Carlos. Todos os direitos reservados para os respectivos assets de arte.</p>
+    </footer>
+
+</body>
+</html>
