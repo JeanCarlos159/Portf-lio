@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Jogo - Detalhes do Desenvolvimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-detail">
+
+    <nav class="detail-nav">
+        <a href="index.html" class="btn-back">← Voltar para a Home</a>
+    </nav>
+
+    <main class="container-detail">
+
+        <!-- SEÇÃO 1: NOME, DESCRIÇÃO E TELA PRINCIPAL -->
+        <section class="detail-section">
+            <h2 class="detail-title">NECROCAT</h2> <!-- Altere para o nome real do seu jogo -->
+            <p class="detail-description">
+                Um jogo de estratégia baseado em turnos e movimentação por grid de cartas. O jogador navega por um tabuleiro dinâmico onde cada escolha dita a linha tênue entre o ganho de recursos e o fim da partida. O objetivo é gerenciar a própria integridade a cada monstro abatido ou item coletado, desbravando o tabuleiro para confrontar o Necrocat e impedir seus planos rituais que ameaçam o ciclo natural da vida.
+            </p>
+            <div class="image-wrapper large-image">
+                <img src="assets/Necrocat.webp" alt="Interface Principal do Jogo Necrocat's Call">
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <!-- SEÇÃO 2: MECÂNICAS DO JOGO (RETRÁTEIS) -->
+        <section class="detail-section">
+            <h2 class="detail-title">Mecânicas do Jogo</h2>
+            <p class="detail-description">
+                O segredo deste sistema está nas escolhas de alto risco e no layout matemático do tabuleiro. Clique nos cards abaixo para expandir os sistemas mecânicos:
+            </p>
+
+            <div class="mechanics-grid">
+                <!-- Mecânica 1 -->
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Movimentação em Grid</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        O cenário é composto por uma matriz de cartas. O jogador pode se mover apenas para cartas adjacentes. Escolher o próximo passo exige estratégia, pois uma carta pode conter uma armadilha, um tesouro essencial ou um guardião do Necrocat.
+                    </p>
+                </details>
+
+                <!-- Mecânica 2 -->
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Custo da Ação (Ciclo Vital)</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        Cada interação cobra seu preço. Derrotar inimigos drena seus recursos ou a sua vida, aproximando o herói da morte de forma matemática. O jogador precisa calcular rotas perfeitas para passar de fase sem zerar seus atributos.
+                    </p>
+                </details>
+
+                <!-- Mecânica 3 -->
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Combate Tático Estático</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        Os combates acontecem diretamente no grid de cartas por meio de resolução numérica. O jogador interage com a carta do monstro usando as armas equipadas no seu inventário, comparando pontos de ataque, defesa e efeitos colaterais ativos.
+                    </p>
+                </details>
+
+                <!-- Mecânica 4 -->
+                <details class="mechanic-card">
+                    <summary class="mechanic-summary">
+                        <span class="mechanic-icon"></span>
+                        <h4 class="mechanic-card-title">Boss Mechanics (Necrocat)</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description mechanics-dropdown-text">
+                        A batalha final introduz mecânicas de perturbação de regras. O Necrocat altera a posição das cartas do grid de forma procedural, revive monstros já derrotados nas cartas vazias e pune jogadores que hesitam nas decisões de turno.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <!-- SEÇÃO 3: MINHAS FUNÇÕES -->
+        <section class="detail-section grid-2-columns">
+            <div class="side-text">
+                <h2 class="detail-title">Minhas Funções</h2>
+                <p class="detail-description" style="margin-bottom: 30px;">
+                    Atuei diretamente na arquitetura lógica do gerenciamento de cartas e na codificação do comportamento de jogo baseado em turnos.
+                </p>
+
+                <!-- SUBTÓPICO 1: PROGRAMAÇÃO & ARQUITETURA -->
+                <details class="role-subtopic">
+                    <summary class="role-summary">
+                        <h4 class="role-sub-title">💻 PROGRAMAÇÃO (Sistemas e Balanceamento)</h4>
+                        <span class="arrow-toggle">▼</span>
+                    </summary>
+                    <p class="detail-description role-dropdown-text">
+                        Responsável pelo desenvolvimento de sistemas, como o gerenciador de fases (Scene/Level Manager), que dita a transição entre o menu, as salas de cartas e o confronto final. Atuei diretamente no refinamento do balanceamento do jogo, utilizando dados coletados em testes práticos (playtests) para calibrar o custo de vida e o ganho de recursos no grid.
+                    </p>
+                </details>
+            </div>
+
+            <!-- COLUNA DA DIREITA: IMAGEM TÉCNICA -->
+            <div class="side-info" style="justify-content: center;">
+                <div class="image-wrapper">
+                    <img src="assets/Necrocat_2.jpg" alt="Lógica de validação do grid de cartas ou máquina de estados do turno">
+                </div>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <!-- SEÇÃO 4: LINKS EXTERNOS -->
+        <section class="detail-section grid-2-columns">
+            <div class="image-wrapper">
+                <img src="assets/Necrocat_1.jpg" alt="Amostra da partida rodando com o grid de cartas ativo">
+            </div>
+            <div class="side-info" style="justify-content: center; gap: 20px;">
+                <h3 class="detail-subtitle">Acesse o Projeto</h3>
+                <p class="detail-description">
+                    Enfrasque sua coragem e jogue a versão de testes na Steam ou dê uma olhada profunda no conceito estético e balanceamento de cartas através do GDD.
+                </p>
+                <a href="https://store.steampowered.com/app/3161410/Necrocat/" target="_blank" class="btn" style="text-align: center; text-transform: uppercase;">Jogar na Steam ↗</a>
+                <a href="https://docs.google.com/document/d/1vcjhFBAAlpgu5FxNV41r9ZDyYi3klIOIvuyQ3XXv6uw/edit?tab=t.0" target="_blank" class="btn" style="text-align: center; text-transform: uppercase; background-color: var(--accent-yellow);">Ler o GDD do Jogo 📄</a>
+            </div>
+        </section>
+
+        <hr class="detail-divider">
+
+        <!-- SEÇÃO 5: VÍDEO DO GAMEPLAY -->
+        <section class="detail-section">
+            <h2 class="detail-title">Gameplay em Ação</h2>
+            <p class="detail-description">
+                Assista à demonstração em vídeo destacando as tomadas de decisão na exploração do grid e as habilidades destrutivas do Necrocat no final do andar.
+            </p>
+            
+            <iframe 
+                width="100%" 
+                height="500" 
+                src="https://www.youtube.com/embed/AKrIAm1Soho" 
+                title="Necrocat Gameplay" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                style="border-radius: 4px; display: block;">
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="detail-footer">
+        <p>&copy; 2026 Jean Carlos. Todos os direitos reservados para os respectivos assets de arte.</p>
+    </footer>
+
+</body>
+</html>
